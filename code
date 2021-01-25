@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+void factor(int n);
+int main()
+{
+    int n;
+    printf("Enter a positive integer =\n");
+    scanf("%d",&n);
+
+    if(n==0)
+    printf("Every number is a factor of zero");
+    else if(n>0)
+    factor(n);
+
+    return 0;
+}
+
+void factor(int n)
+{
+    for(int i=1; i<=n; i++){
+        if(n%i==0){
+            printf("%d\t",i);
+        }
+    }
+}
